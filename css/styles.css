@@ -18,32 +18,33 @@ a,
 }
 .top-contact {
   background-color: #4c4d4f;
-  color: #fff;
   text-align: right;
   padding: 5px;
 }
 .top-contact p {
+  color: #eee;
   font-size: 18px;
   margin: 0 0 0 30px;
   display: inline;
 }
-.logo {
-  padding: 0 !important;
+.top-contact p a {
+  color: #eee;
 }
-.logo-img img {
+.navbar {
+  padding: 8px 0;
+}
+.logo-img {
   width: 200px;
 }
-.menu {
-  padding: 25px 0;
-}
-.menu a {
-  color: #4c4d4f;
-}
-.menu a:hover {
-  color: #1d5b97;
+.collapse {
+  justify-content: flex-end;
 }
 .nav-link {
-  padding: 8px 0 8px 20px;
+  color: #4c4d4f !important;
+  padding: 0 0 0 20px !important;
+}
+a.nav-link:hover {
+  color: #1d5b97 !important;
 }
 .carousel img {
   height: 500px;
@@ -272,20 +273,11 @@ button {
     width: 90%;
     margin: 0 auto;
   }
-}
-@media (max-width: 768px) {
-  .header .col-sm-12 {
+  .nav-item {
     text-align: center;
   }
-  .justify-content-end {
-    justify-content: center !important;
-  }
-  .menu {
-    padding: 0;
-  }
-  .nav-link {
-    padding: 8px 10px 8px 10px;
-  }
+}
+@media (max-width: 768px) {
   .features .col-20 {
     width: 33.33%;
   }
@@ -293,13 +285,38 @@ button {
     width: 100%;
     margin: 0 auto;
   }
+  .logo-img {
+    width: 150px;
+  }
+  .top-contact p {
+    font-size: 12px;
+  }
+  .query {
+    padding-bottom: 20px;
+  }
+  .contact-detail {
+    margin-top: 30px;
+  }
 }
 @media (max-width: 640px) {
+  h1 {
+    font-size: 28px;
+  }
+  p {
+    font-size: 16px;
+  }
   .top-contact p {
-    font-size: 14px;
+    font-size: 12px;
+    display: block;
   }
   .carousel img {
-    height: 350px;
+    height: 300px;
+  }
+  .banner {
+    height: 300px;
+  }
+  .contact-banner {
+    height: 300px;
   }
   .benifits ul {
     padding: 0;
@@ -311,11 +328,19 @@ button {
     width: 50%;
     margin-bottom: 30px;
   }
+  .features .col-20:nth-last-child(1) {
+    margin-bottom: 0;
+  }
   .contact-form-container {
     width: 90%;
   }
+  .banner h2 {
+    font-size: 2.5rem;
+    padding-top: 230px;
+  }
   .contact-banner h2 {
-    padding-top: 150px;
+    font-size: 2.5rem;
+    padding-top: 230px;
   }
   .contact-detail {
     padding: 0;
